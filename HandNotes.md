@@ -48,3 +48,9 @@
 - At this point, router sends out an ARP message to find out where the destination is:<br><img src="https://i.ibb.co/TPYv8By/Router-ARP-Broadcast.png">
 - In the end when we check the message when it's at the source yet, we see that in Layer 3 it's from source to destination (in another network) but in Layer 2 it's from source to its router:<br><img src="https://i.ibb.co/djNFR4z/In-the-end.png"><br>So here Layer 3 has the directions for router; Layer 2 has the directions for the switch.
 - So at the higher level, the message at the router is like:<br><img src="https://i.ibb.co/wM1BKxc/At-the-higher-level.png">
+
+> In router's console/CLI: <br> ```enable``` **->** gives root authority <br> ```show ip route``` **->** shows CAM table<br><img src="https://i.ibb.co/KzCr3bV/Simple-Route-Map.png"> <br>```show bgp ipv4 unicast``` **->** shows the route map of a bigger router
+
+### DNS *Sneak Peak*
+- In practical world, things are not going over IP adresses but domain names, like google.com etc.
+- At this point a **DNS (Domain Name Server)** comes in and gives us the matching IP of that sepcific domain name: <br><img src="https://i.ibb.co/dbgyPww/DNS-Answer.png">
